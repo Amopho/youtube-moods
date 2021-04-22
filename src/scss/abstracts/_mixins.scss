@@ -1,5 +1,16 @@
 // Mixins
 
-// @mixin name {
-//   // your rules
+// // Reset list style
+// @mixin reset-list {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// // center content
+// @mixin center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-direction: column;
 // }
