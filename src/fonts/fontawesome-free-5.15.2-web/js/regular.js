@@ -11,7 +11,7 @@
   try {
     if (typeof window !== 'undefined') _WINDOW = window;
     if (typeof document !== 'undefined') _DOCUMENT = document;
-  } catch (e) {}
+  }  (e) {}
 
   var _ref = _WINDOW.navigator || {},
       _ref$userAgent = _ref.userAgent,
@@ -27,7 +27,7 @@
   var PRODUCTION = function () {
     try {
       return "production" === 'production';
-    } catch (e) {
+    }  (e) {
       return false;
     }
   }();
@@ -35,7 +35,7 @@
   function bunker(fn) {
     try {
       fn();
-    } catch (e) {
+    }  (e) {
       if (!PRODUCTION) {
         throw e;
       }
